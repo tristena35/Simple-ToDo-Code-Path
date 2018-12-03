@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">SimpleTodo</string>
+    <string name="page_title">TODO List</string>
+    <string name="user_hint_text">Push and hold an item to remove it from the list</string>
+</resources>

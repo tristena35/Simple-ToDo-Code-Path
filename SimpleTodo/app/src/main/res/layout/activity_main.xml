@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="false"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:fontFamily="serif"
+        android:padding="5dp"
+        android:text="@string/app_name"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"/>
+
+    <ListView
+        android:fontFamily="serif"
+        android:id="@+id/listView_items"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/textView_header"
+        android:layout_above="@+id/linearLayout_add_items"
+        android:layout_marginBottom="20dp"/>
+
+    <TextView
+        android:id="@+id/textView_help_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linearLayout_add_items"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="serif"
+        android:text="@string/user_hint_text"
+        android:textColor="#000000"
+        android:textStyle="italic"/>
+
+    <LinearLayout
+        android:id="@+id/linearLayout_add_items"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+
+        <EditText
+            android:id="@+id/editText_enter_item"
+            android:hint="Something Todo?"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="26dp"
+            android:layout_marginBottom="26dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginEnd="100dp"
+            android:layout_marginRight="100dp"
+            android:fontFamily="serif"
+            android:inputType="textCapSentences"
+            />
+
+        <Button
+            android:id="@+id/btn_add_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="26dp"
+            android:layout_marginEnd="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginBottom="26dp"
+            android:background="@drawable/button_shadow_background"
+            android:fontFamily="serif"
+            android:onClick="addListItem"
+            android:text="Add"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
